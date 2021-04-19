@@ -5,7 +5,7 @@ import java.awt.Font;
 import javax.swing.BorderFactory;
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
-import javax.swing.JCheckBox;a
+import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -125,8 +125,9 @@ public class App {
 		panelCadastro.add(cnbGenero);
 		cnbGenero.setBounds(175, 145, 150, 25);
 		
-		botaoSalvar.addActionListener(new BotaoListener(textTitulo, textSinopse, cnbGenero, GrupoButtom));
+		botaoSalvar.addActionListener(new BotaoListener(textTitulo, textSinopse, cnbGenero, assistido, netflix, primevideo, piratebay, StarRater));
 		
-		}
+		}	
 }
+
 
