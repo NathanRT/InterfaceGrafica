@@ -127,6 +127,7 @@ public class App {
 		
 		botaoSalvar.addActionListener(new BotaoListener(textTitulo, textSinopse, cnbGenero, GrupoButtom));
 		
-		}	
+		}
+	a
 }
 
