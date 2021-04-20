@@ -7,7 +7,6 @@ public class Filme {
 	private String Genero;
 	private String assistir;
 	
-	private boolean assistido;
 	private float avaliacao;
 	
 	public String getTitulo(){
