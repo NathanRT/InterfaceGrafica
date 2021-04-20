@@ -16,19 +16,19 @@ public class BotaoListener extends JFrame implements ActionListener {
 		private String assistir;
 		private JTextField textTitulo;
 		private JTextField textSinopse;
-		private JComboBox<String> cnbGenero;
+		private JComboBox<String> pctGenero;
 		private JCheckBox assistido;
 		private JRadioButton netflix; 
 		private JRadioButton primevideo;
 		private JRadioButton piratebay;
 		private StarRater StarRater;
 		
-	public BotaoListener(JTextField textTitulo, JTextField textSinopse, JComboBox<String> cnbGenero, JCheckBox assistido,
+	public BotaoListener(JTextField textTitulo, JTextField textSinopse, JComboBox<String> pctGenero, JCheckBox assistido,
 			JRadioButton netflix, JRadioButton primevideo, JRadioButton piratebay, StarRater StarRater) {
 		
 		this.textTitulo = textTitulo;
 		this.textSinopse = textSinopse;
-		this.cnbGenero = cnbGenero;
+		this.pctGenero = pctGenero;
 		this.assistido = assistido;
 		this.netflix = netflix;
 		this.primevideo = primevideo;
@@ -42,7 +42,7 @@ public class BotaoListener extends JFrame implements ActionListener {
 		Filme filme = new Filme();
 		filme.setTitulo(textTitulo.getText());
 		filme.setSinopse(textSinopse.getText());
-		filme.setGenero((String) cnbGenero.getSelectedItem());		
+		filme.setGenero((String) pctGenero.getSelectedItem());		
 		filme.setavaliacao(StarRater.getSelection());
 		
 		if(assistido.isSelected()) {
@@ -61,7 +61,7 @@ public class BotaoListener extends JFrame implements ActionListener {
 			Canal = "Não definido";
 		}
 		
-		if(textTitulo.getText().equals("") || cnbGenero.getSelectedItem() == null){
+		if(textTitulo.getText().equals("") || pctGenero.getSelectedItem() == null){
 			JOptionPane.showMessageDialog(null, "Por favor, preecha todos os campos!");
 		} else {
 		JOptionPane.showMessageDialog(null, 
