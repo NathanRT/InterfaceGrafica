@@ -119,14 +119,14 @@ public class App {
 	
 		String[] generos = {"Ação", "Aventura", "Comédia", "Comédia de Ação", "Comédia de Terror", "Comédia Romântica", "Dança", "Documentário","Drama", "Espionagem", "Fantasia", "Ficção Científica", "Musical", "Romance","Suspense", "Terror"};
 		
-		JComboBox<String> cnbGenero = new JComboBox<String>(generos);
-		cnbGenero.setVisible(true);
-		cnbGenero.setFont(new Font("Arial", Font.PLAIN, 12));
-		cnbGenero.setSelectedItem(null);
-		panelCadastro.add(cnbGenero);
-		cnbGenero.setBounds(175, 145, 150, 25);
+		JComboBox<String> pctGenero = new JComboBox<String>(generos);
+		pctGenero.setVisible(true);
+		pctGenero.setFont(new Font("Arial", Font.PLAIN, 12));
+		pctGenero.setSelectedItem(null);
+		panelCadastro.add(pctGenero);
+		pctGenero.setBounds(175, 145, 150, 25);
 		
-		botaoSalvar.addActionListener(new BotaoListener(textTitulo, textSinopse, cnbGenero, assistido, netflix, primevideo, piratebay, StarRater));
+		botaoSalvar.addActionListener(new BotaoListener(textTitulo, textSinopse, pctGenero, assistido, netflix, primevideo, piratebay, StarRater));
 		
 		}	
 }
