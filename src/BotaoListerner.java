@@ -68,7 +68,7 @@ public class BotaoListener extends JFrame implements ActionListener {
 				"-  " + cnbGenero.getSelectedItem() + "\n " +
 				"-  " + Canal + "\n " +
 				"-  " + assistir + "\n " +
-				"-  " + StarRater.getSelection()
+				"-  " + StarRater.getSelection() + " Estrelas"
 				);
 		}
 
