@@ -105,6 +105,7 @@ public class App {
 		GrupoButtom.add(netflix);
 		GrupoButtom.add(primevideo);
 		GrupoButtom.add(piratebay);
+		GrupoButtom.getSelection();
 		
 		assistido.setFont(new Font("Arial", Font.BOLD, 12));
 		assistido.setBounds(345, 106, 120, 30);
@@ -129,5 +130,4 @@ public class App {
 		
 		}	
 }
-
 
